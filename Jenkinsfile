@@ -6,6 +6,7 @@ pipeline {
             agent {
                 docker {
                     image 'python:3.11'
+                    reuseNode true
                 }
             }
             steps {
